@@ -1,0 +1,162 @@
+<div
+style={{
+  display: "flex",
+  flexDirection: "row",
+  width: "100%",
+  gap: "10px",
+  height: "90vh",
+  justifyContent: "space-evenly",
+}}
+>
+<BoxComponent
+  componentStyle={{
+    position: "absolute",
+    top: "45%",
+    width: "30%",
+    left: "20%",
+    transform: "translate(-20%, -40%)",
+    textAlign: "center",
+    height: "60%",
+    boxShadow: "#1f1f1f 0px 25px 0px 0px",
+    borderRadius: "50px 50px",
+    border: "2px solid violet",
+  }}
+  className="shadow-box"
+>
+  <div style={{ position: "relative", fontSize: "3rem" }}>
+    <h3
+      style={{
+        color: "#ff50c2",
+        margin: "0 0",
+        textTransform: "uppercase",
+        WebkitTextStroke: "2px black",
+        fontSize: "4.7rem",
+      }}
+    >
+      Ready to work with me ?
+    </h3>
+    <p
+      style={{
+        fontSize: "1.2rem",
+        color: "black",
+        textAlign: "center",
+        padding: "0px 2px 0",
+        fontStyle: "italic",
+      }}
+    >
+      Let's embark on a journey together, where art meets purpose and
+      imagination knows no limits.{" "}
+    </p>
+  </div>
+</BoxComponent>
+<BoxComponent
+  componentStyle={{
+    position: "absolute",
+    width: "30%",
+    top: "22.5%",
+    right: "20%",
+    transform: "translate(0%, 0%)",
+    textAlign: "center",
+    height: "40%",
+    boxShadow: "#1f1f1f 0px 25px 0px 0px",
+    borderRadius: " 50px 50px",
+    border: "2px solid violet",
+    overflow: "hidden"
+  }}
+>
+  <div
+    className="night-sky"
+    style={{
+      backgroundColor: "blue",
+      height: "18vh",
+      // height: "inherit",
+      position: "relative",
+    }}
+  >
+    <div>
+      <StarComponent
+        extraStyle={{
+          top: "-10%",
+          left: "20%",
+        }}
+      />
+      <CircleComponent
+        extraStyle={{
+          top: "70%",
+          left: "70%",
+          position: "absolute",
+        }}
+      />
+    </div>
+    <div
+      className="moon"
+      style={{
+        content: "moon",
+        width: "90px",
+        height: "90px",
+        borderRadius: "50%",
+        border: "0px solid black",
+        left: "36%",
+        top: "20%",
+        boxShadow: "0 30px yellow",
+        rotate: "63deg",
+        position: "absolute",
+      }}
+    ></div>
+    <CircleComponent
+      extraStyle={{
+        top: "10%",
+        left: "10%",
+        position: "absolute",
+      }}
+    />
+    <StarComponent
+      extraStyle={{
+        top: "-20%",
+        left: "70%",
+      }}
+    />
+    <CircleComponent
+      extraStyle={{
+        top: "10%",
+        left: "80%",
+        position: "absolute",
+      }}
+    />
+    <StarComponent
+      extraStyle={{
+        top: "20%",
+        left: "40%",
+      }}
+    />
+    <StarComponent
+      extraStyle={{
+        top: "20%",
+        left: "80%",
+      }}
+    />
+    <CircleComponent
+      extraStyle={{
+        top: "60%",
+        left: "50%",
+        position: "absolute",
+      }}
+    />
+    <StarComponent
+      extraStyle={{
+        top: "10%",
+        left: "90%",
+      }}
+    />
+    <StarComponent
+      extraStyle={{
+        bottom: "-20%",
+        left: "10%",
+      }}
+    />
+  </div>
+  <div>
+      
+  </div>
+</BoxComponent>
+</div>
