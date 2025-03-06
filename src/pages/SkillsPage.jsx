@@ -8,6 +8,7 @@ import {
   textAlign,
 } from "@mui/system";
 import BoxComponent from "../components/BoxComponent";
+import { MarginTwoTone } from "@mui/icons-material";
 
 export default function SkillsPage() {
   const headlines = [
@@ -52,6 +53,12 @@ export default function SkillsPage() {
     },
   ];
 
+  const projects = [
+    "Pumperpal",
+    "Employee Onboarding Portal",
+    "Best Deals Interiors",
+  ];
+
   return (
     <div
       style={{
@@ -60,7 +67,7 @@ export default function SkillsPage() {
         alignItems: "center",
         justifyContent: "center",
         gap: "20px",
-        height: "99vh", 
+        height: "99vh",
         backgroundColor: "tan",
       }}
     >
@@ -85,8 +92,11 @@ export default function SkillsPage() {
             }}
             key={index}
           >
-            <div style={{ marginBottom: "30px", transition: "all 1s ease" }} className="box" >
-              <BoxComponent 
+            <div
+              style={{ marginBottom: "30px", transition: "all 1s ease" }}
+              className="box"
+            >
+              <BoxComponent
                 componentStyle={{
                   color: "black",
                   textTransform: "uppercase",
@@ -97,23 +107,26 @@ export default function SkillsPage() {
                   justifyContent: "center",
                   boxShadow: "rgb(0, 1, 1) 2px 3px 1px 5px",
                   borderRadius: "30px",
-                  padding: "0px 10px"
-                }} 
-               
+                  padding: "0px 10px",
+                }}
               >
-                <h3 style={{
-                  fontSize: "2.3rem"
-                }}>{headline.title}</h3>
+                <h3
+                  style={{
+                    fontSize: "2.3rem",
+                  }}
+                >
+                  {headline.title}
+                </h3>
               </BoxComponent>
             </div>
 
-            <div >
+            <div>
               {headline.description.type === "list" ? (
                 <BoxComponent
                   componentStyle={{
                     display: "flex",
                     padding: "32px 1px 1px 40px",
-                    height: "360px",
+                    height: "320px",
                     boxShadow: "rgb(0, 1, 1) 2px 3px 1px 5px",
                     color: "black",
                     borderRadius: "30px",
@@ -141,20 +154,20 @@ export default function SkillsPage() {
                   componentStyle={{
                     display: "flex",
                     padding: "32px 1px 1px 40px",
-                    height: "360px",
+                    height: "320px",
                     boxShadow: "rgb(0, 1, 1) 2px 3px 1px 5px",
                     borderRadius: "30px",
                     color: "black",
-
+                    marginBottom: "30px"
                   }}
                 >
                   <h3>{headline.description.descTitle}</h3>
-    
+
                   {headline.description.descData.map((data, index) => (
                     <p
                       key={index}
                       style={{
-                        margin: "02px",
+                        margin: "2px",
                       }}
                     >
                       {data}
@@ -165,6 +178,29 @@ export default function SkillsPage() {
             </div>
           </div>
         ))}
+      </div>
+      <div>
+        <BoxComponent
+          componentStyle={{
+            color: "black",
+            padding: "0px 20px",
+            // backgroundColor: "red",
+            fontSize: "2rem", 
+            margin: "0px 0px"
+          }}
+        >
+          <h3 style={{textTransform: "uppercase", textAlign: "center", fontSize: "2rem", color: "brown"}} >Projects:</h3>
+          {projects.map((title, index) => {
+            console.log("projects", projects);
+            return (
+              <div>
+                <ol style={{listStyle: "none"}}>
+                 <li>  <span>{index + 1}.</span>{title}</li>
+                </ol>
+              </div>
+            );
+          })}
+        </BoxComponent>
       </div>
     </div>
   );
