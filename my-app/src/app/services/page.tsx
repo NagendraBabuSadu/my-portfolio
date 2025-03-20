@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 import MotionComponent from "../components/MotionComponet";
 import { Box, Card, CardContent, Modal, Typography } from "@mui/material";
-import { hover, motion } from "framer-motion";
+import {  motion } from "framer-motion";
 
 type cardDetailsProps = {
   id: number;

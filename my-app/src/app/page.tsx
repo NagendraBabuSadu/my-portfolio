@@ -7,7 +7,6 @@ import HomeComponent from "./HomeComponent";
 import PortfolioComponent from "./portfolio/page";
 import ServicesComponent from "./services/page";
 import store from "./store";
-import Footer from "./components/Footer";
 
 export default function Home() {
   return (

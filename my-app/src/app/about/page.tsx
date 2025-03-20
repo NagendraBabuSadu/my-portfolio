@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import { Button, Typography } from "@mui/material";
+import {  Typography } from "@mui/material";
 import SkillBar from "../components/ResponsiveBar";
 import Counter from "../components/Counter";
 import MotionComponent from "../components/MotionComponet";

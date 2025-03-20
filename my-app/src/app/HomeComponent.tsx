@@ -34,7 +34,7 @@ const HomeComponent: React.FC = () => {
           textAlign="center"
           fontWeight="600"
         >
-          I'm Nagendra Babu, frontend developer based in India.
+          I&apos;m Nagendra Babu, frontend developer based in India.
         </Typography>
       </motion.div>
 
@@ -44,7 +44,7 @@ const HomeComponent: React.FC = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
         >
-          I'm a frontend developer from Hyderabad, Telangana, India with 3+
+          I&apos;m a frontend developer from Hyderabad, Telangana, India with 3+
           years of experience in Capgemini.
         </motion.span>
       </p>
