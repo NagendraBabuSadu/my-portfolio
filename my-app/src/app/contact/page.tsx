@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import MotionComponent from "../components/MotionComponet";
 import {
   Box,
@@ -10,30 +10,30 @@ import {
   DialogContent,
   DialogContentText,
   DialogTitle,
-  FormControl,
-  Input,
-  TextField,
   Typography,
 } from "@mui/material";
 import { Email, Phone, LocationOn } from "@mui/icons-material";
 import emailjs from "emailjs-com";
-import { useDispatch } from "react-redux";
-import { Form, useForm } from "react-hook-form";
+import { useForm } from "react-hook-form";
 
 const ContactComponent: React.FC = () => {
-  const dispatch = useDispatch();
-
   const {
     register,
     handleSubmit,
     reset,
-    formState: { errors },
-  } = useForm();
+    formState: {},
+  } = useForm<ContactFormData>();
+
+  interface ContactFormData {
+    name: string;
+    email: string;
+    message: string;
+  }
 
   const [sentMail, setSentMail] = useState(false);
   const [open, setOpen] = useState(false);
 
-  const onSubmit = (data: any) => {
+  const onSubmit = (data: ContactFormData) => {
     const templateParams = {
       to_name: "Admin",
       from_name: data.name,
@@ -78,7 +78,7 @@ const ContactComponent: React.FC = () => {
           style={{
             display: "flex",
             flexDirection: "column",
-            textAlign: "left"
+            textAlign: "left",
           }}
         >
           <Box
@@ -89,7 +89,7 @@ const ContactComponent: React.FC = () => {
             className="font-bold bg-gradient-to-r from-purple-500 to-orange-500 bg-clip-text text-transparent "
           >
             <MotionComponent variant="h2" fontWeight="600">
-              Let's talk
+              Let&apos;s talk
             </MotionComponent>
           </Box>
           <Box
@@ -99,7 +99,7 @@ const ContactComponent: React.FC = () => {
             }}
           >
             <MotionComponent variant="body1" fontSize="1.3rem">
-              I'm currently available to take on new projects, so feel free to
+              I&apos;m currently available to take on new projects, so feel free to
               send me a message about anything that you want me to work on. You
               can contact anytime.
             </MotionComponent>
@@ -136,7 +136,11 @@ const ContactComponent: React.FC = () => {
         <div className="flex justify-center items-center p-2 px-4 ">
           <form
             onSubmit={handleSubmit(onSubmit)}
-            style={{ paddingBottom: "2rem", width: "100%", margin: "2rem 1rem" }}
+            style={{
+              paddingBottom: "2rem",
+              width: "100%",
+              margin: "2rem 1rem",
+            }}
           >
             <div className="mb-4">
               <label className="block text-white mb-2">Your Name</label>

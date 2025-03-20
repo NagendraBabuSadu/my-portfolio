@@ -1,5 +1,4 @@
-import { InputAdornment, TextField, Button } from "@mui/material";
-import { AccountCircle } from "@mui/icons-material";
+
 
 const Footer = () => {
   return (
