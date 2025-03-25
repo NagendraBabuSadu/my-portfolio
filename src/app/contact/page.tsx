@@ -99,9 +99,9 @@ const ContactComponent: React.FC = () => {
             }}
           >
             <MotionComponent variant="body1" fontSize="1.3rem">
-              I&apos;m currently available to take on new projects, so feel free to
-              send me a message about anything that you want me to work on. You
-              can contact anytime.
+              I&apos;m currently available to take on new projects, so feel free
+              to send me a message about anything that you want me to work on.
+              You can contact anytime.
             </MotionComponent>
           </Box>
           <Box
@@ -113,21 +113,52 @@ const ContactComponent: React.FC = () => {
             }}
           >
             <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-              <Email sx={{ fontSize: 60, color: "gray" }} />
-              <Typography variant="h4">
+              <Email       sx={{
+                  fontSize: { xs: 20, sm: 30, md: 40, lg: 30 }}} />
+              <Typography
+                variant="h5"
+                sx={{
+                  fontSize: { xs: 20, sm: 30, md: 40, lg: 30 },
+                  wordBreak: "break-word",
+                  overflowWrap: "break-word",
+                  whiteSpace: "normal",
+                  color: "red",
+                }}
+              >
                 <a href="">nagendrababusadu@gmail.com</a>
               </Typography>
             </Box>
 
             <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-              <Phone sx={{ fontSize: 60, color: "gray" }} />
-              <Typography variant="h4">+91-6305109126</Typography>
+              <Phone
+                sx={{
+                  fontSize: { xs: 20, sm: 30, md: 40, lg: 30 }}} 
+              />
+              <Typography variant="h5"         
+                sx={{
+                  fontSize: { xs: 20, sm: 30, md: 40, lg: 30 },
+                  wordBreak: "break-word",
+                  overflowWrap: "break-word",
+                  whiteSpace: "normal",
+                  color: "red",
+                }}>+91-6305109126</Typography>
+            </Box>
+            <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+              <LocationOn
+                sx={{
+                  fontSize: { xs: 20, sm: 30, md: 40, lg: 30 }}} 
+              />
+              <Typography variant="h5"         
+                sx={{
+                  fontSize: { xs: 20, sm: 30, md: 40, lg: 30 },
+                  wordBreak: "break-word",
+                  overflowWrap: "break-word",
+                  whiteSpace: "normal",
+                  color: "red",
+                }}>Hyderabad, Telangana, India</Typography>
             </Box>
 
-            <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-              <LocationOn sx={{ fontSize: 60, color: "gray" }} />
-              <Typography variant="h4">Hyderabad, Telangana, India</Typography>
-            </Box>
+            
           </Box>
         </div>
 
