@@ -10,11 +10,20 @@ import MediaCard from "../components/MediaCard";
 type imageslistProps = {
   image: string;
   projectTitle: string;
+  url: string;
 };
 const imageslist: imageslistProps[] = [
-  { image: "empPortal.png", projectTitle: "Employee Onboarding" },
-  { image: "best deals interiors.png", projectTitle: "Best Deals Interiors" },
-  { image: "pumperpal.webp", projectTitle: "Pumperpal" },
+  { image: "empPortal.png", projectTitle: "Employee Onboarding", url: "/" },
+  {
+    image: "best deals interiors.png",
+    projectTitle: "Best Deals Interiors",
+    url: "https://bestdealsinteriors.netlify.app/",
+  },
+  {
+    image: "pumperpal.webp",
+    projectTitle: "Pumperpal",
+    url: "https://www.pumperpal.io/",
+  },
 ];
 
 const PortfolioComponent: React.FC = () => {
@@ -33,12 +42,19 @@ const PortfolioComponent: React.FC = () => {
             }}
             key={index}
           >
-            <MediaCard
-              image={item.image}
-              width="25rem"
-              height="16rem"
-              borderRadiusInner=""
-            ></MediaCard>
+            <a
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none" }}
+            >
+              <MediaCard
+                image={item.image}
+                width="25rem"
+                height="16rem"
+                borderRadiusInner=""
+              ></MediaCard>
+            </a>
             <Typography variant="h5">{item.projectTitle}</Typography>
           </motion.div>
         ))}
