@@ -122,8 +122,8 @@ const ContactComponent: React.FC = () => {
                   wordBreak: "break-word",
                   overflowWrap: "break-word",
                   whiteSpace: "normal",
-                  color: "red",
-                }}
+                  
+        }}
               >
                 <a href="">nagendrababusadu@gmail.com</a>
               </Typography>
@@ -140,7 +140,7 @@ const ContactComponent: React.FC = () => {
                   wordBreak: "break-word",
                   overflowWrap: "break-word",
                   whiteSpace: "normal",
-                  color: "red",
+    
                 }}>+91-6305109126</Typography>
             </Box>
             <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
@@ -154,7 +154,7 @@ const ContactComponent: React.FC = () => {
                   wordBreak: "break-word",
                   overflowWrap: "break-word",
                   whiteSpace: "normal",
-                  color: "red",
+
                 }}>Hyderabad, Telangana, India</Typography>
             </Box>
 
