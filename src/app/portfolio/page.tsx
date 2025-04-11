@@ -24,6 +24,11 @@ const imageslist: imageslistProps[] = [
     projectTitle: "Pumperpal",
     url: "https://www.pumperpal.io/",
   },
+  {
+    image: "BuyNest-eCommerce.png",
+    projectTitle: "BuyNest",
+    url: "https://e-commerce-babu.vercel.app/",
+  },
 ];
 
 const PortfolioComponent: React.FC = () => {
@@ -32,7 +37,7 @@ const PortfolioComponent: React.FC = () => {
       <MotionComponent variant="h1" textAlign="center">
         My Works
       </MotionComponent>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-15 m-19  left-0 cursor-pointer">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 m-19  left-0 cursor-pointer">
         {imageslist.map((item, index) => (
           <motion.div
             whileHover={{ scale: 1.2, border: "4px solid #b353f2" }}
