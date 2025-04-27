@@ -29,6 +29,11 @@ const imageslist: imageslistProps[] = [
     projectTitle: "BuyNest",
     url: "https://e-commerce-babu.vercel.app/",
   },
+  {
+    image: "urlShortner.jpg",
+    projectTitle: "URL Shortner",
+    url: "https://url-shortner-woad-two.vercel.app/",
+  },
 ];
 
 const PortfolioComponent: React.FC = () => {
