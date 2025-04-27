@@ -30,7 +30,7 @@ const imageslist: imageslistProps[] = [
     url: "https://e-commerce-babu.vercel.app/",
   },
   {
-    image: "urlShortner.jpg",
+    image: "urlShortner.png",
     projectTitle: "URL Shortner",
     url: "https://url-shortner-woad-two.vercel.app/",
   },
