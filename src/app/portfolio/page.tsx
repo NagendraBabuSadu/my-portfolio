@@ -13,7 +13,16 @@ type imageslistProps = {
   url: string;
 };
 const imageslist: imageslistProps[] = [
-  { image: "empPortal.png", projectTitle: "Employee Onboarding", url: "/" },
+  {
+    image: "urlShortner.png",
+    projectTitle: "URL Shortner",
+    url: "https://url-shortner-woad-two.vercel.app/",
+  },
+  {
+    image: "SaiOpticals.png",
+    projectTitle: "Sai Optical Express",
+    url: "https://optics2.vercel.app/",
+  },
   {
     image: "best deals interiors.png",
     projectTitle: "Best Deals Interiors",
@@ -24,16 +33,6 @@ const imageslist: imageslistProps[] = [
     projectTitle: "Pumperpal",
     url: "https://www.pumperpal.io/",
   },
-  {
-    image: "BuyNest-eCommerce.png",
-    projectTitle: "BuyNest",
-    url: "https://e-commerce-babu.vercel.app/",
-  },
-  {
-    image: "urlShortner.png",
-    projectTitle: "URL Shortner",
-    url: "https://url-shortner-woad-two.vercel.app/",
-  },
 ];
 
 const PortfolioComponent: React.FC = () => {
@@ -42,10 +41,10 @@ const PortfolioComponent: React.FC = () => {
       <MotionComponent variant="h1" textAlign="center">
         My Works
       </MotionComponent>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 m-19  left-0 cursor-pointer">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 m-19  left-0 cursor-pointer">
         {imageslist.map((item, index) => (
           <motion.div
-            whileHover={{ scale: 1.2, border: "4px solid #b353f2" }}
+            whileHover={{ scale: 1.1, border: "4px solid #b353f2" }}
             className="group transition-ease-all duration-100 text-center font-bold "
             style={{
               border: "4px solid gray",
@@ -65,7 +64,9 @@ const PortfolioComponent: React.FC = () => {
                 borderRadiusInner=""
               ></MediaCard>
             </a>
-            <Typography variant="h5">{item.projectTitle}</Typography>
+            <Typography variant="h5" className="p-4">
+              {item.projectTitle}
+            </Typography>
           </motion.div>
         ))}
       </div>
