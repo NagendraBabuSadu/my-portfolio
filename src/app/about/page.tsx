@@ -30,7 +30,7 @@ const AboutComponent: React.FC = () => {
         success and growth.
       </MotionComponent>
       <MotionComponent variant="body1" fontSize="1.4rem">
-        My passion for frontend development is not only reflected in my
+        My passion for fullstack development is not only reflected in my
         extensive experience but also in the enthusiasm and dedication I bring
         to each project.
       </MotionComponent>

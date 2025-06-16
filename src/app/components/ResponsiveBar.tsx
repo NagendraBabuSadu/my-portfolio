@@ -9,7 +9,7 @@ const skills: skillItem[] = [
   { name: "HTML & CSS", level: "w-[90%]" },
   { name: "React JS", level: "w-[85%]" },
   { name: "JavaScript", level: "w-[80%]" },
-  { name: "TypeScript", level: "w-[75%]" },
+  { name: "Node.js", level: "w-[75%]" },
 ];
 const SkillBar: React.FC = () => {
   return (

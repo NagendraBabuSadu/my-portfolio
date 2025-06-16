@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 import MotionComponent from "../components/MotionComponet";
 import { Box, Card, CardContent, Modal, Typography } from "@mui/material";
-import {  motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 type cardDetailsProps = {
   id: number;
@@ -15,27 +15,51 @@ type cardDetailsProps = {
 const cardDetails: cardDetailsProps[] = [
   {
     id: 1,
-    label: "Web Design",
+    label: "Full-Stack Web Development",
     description:
-      "Web design is the process of creating visually appealing, user-friendly, and responsive websites that provide an engaging experience across all devices. It involves a combination of aesthetics, usability, and functionality, including layout design, typography, color schemes, and interactive elements.",
+      "Build end-to-end web applications using the MERN stack — React for dynamic frontends, Node.js/Express for scalable APIs, and MongoDB for flexible, NoSQL data storage.",
   },
   {
     id: 2,
-    label: "Graphic Design",
+    label: "RESTful API Development",
     description:
-      "Graphic design is the art of visually communicating ideas using typography, colors, and imagery. It includes branding, illustrations, and digital assets to create engaging and professional designs for websites, advertisements, and print media.",
+      "Develop secure and efficient RESTful APIs using Node.js and Express, with middleware handling, JWT-based auth, and proper error management for reliable client-server communication.",
   },
   {
     id: 3,
-    label: "Social Media",
+    label: "Authentication & Authorization",
     description:
-      "Social media marketing involves creating, curating, and sharing engaging content to grow brand awareness, build communities, and drive engagement across platforms like Instagram, Facebook, LinkedIn, and Twitter.",
+      "Implement secure login and signup flows using JSON Web Tokens (JWT), access/refresh tokens, and role-based access control to protect APIs and route access.",
   },
   {
     id: 4,
-    label: "Digital Marketing",
+    label: "MongoDB Data Modeling",
     description:
-      "Digital marketing utilizes SEO, social media, email campaigns, and paid ads to reach the right audience, increase brand visibility, and drive conversions through online channels.",
+      "Design and implement flexible and scalable data schemas using MongoDB and Mongoose, with support for validation, relationships, indexing, and performance tuning.",
+  },
+  {
+    id: 5,
+    label: "Responsive Frontend Development",
+    description:
+      "Build responsive, component-driven UIs using React.js and Tailwind CSS or Material UI, ensuring accessibility, performance, and mobile-first designs.",
+  },
+  {
+    id: 6,
+    label: "Real-Time Applications",
+    description:
+      "Integrate Socket.io for real-time features like chat, notifications, and live updates, enabling interactive and engaging user experiences across clients.",
+  },
+  {
+    id: 7,
+    label: "Testing & Code Quality",
+    description:
+      "Write unit and integration tests using Jest and React Testing Library to ensure stability and prevent regressions, while following best practices in code structure.",
+  },
+  {
+    id: 8,
+    label: "Deployment & CI/CD",
+    description:
+      "Deploy full-stack applications to platforms like Vercel, Render, or Railway with CI/CD pipelines for automated testing, builds, and production rollouts.",
   },
 ];
 
@@ -45,29 +69,35 @@ const ServicesComponent: React.FC = () => {
   );
 
   return (
-    <div style={{
-      marginTop: "5rem", marginBottom: "2rem"
-    }}> 
+    <div
+      style={{
+        marginTop: "5rem",
+        marginBottom: "2rem",
+      }}
+    >
       <MotionComponent variant="h1" textAlign="center">
         My Services
       </MotionComponent>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-15 mb-20 mt-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-15 mb-20 mt-20">
         {cardDetails.map((item) => (
           <motion.div
             key={item.id}
-            whileHover={{ scale: 1.2 }}
+            whileHover={{ scale: 1.1 }}
             className="group transition-ease-all duration-100"
           >
             <Card
-              className="bg-black text-white border border-gray-700 p-1 rounded-xl relative overflow-hidden transition-all duration-300 group-hover:bg-gradient-to-r from-red-500 to-orange-500 cursor-pointer"
+              className="bg-black text-white border border-gray-700 p-1 rounded-xl relative overflow-hidden transition-all duration-300 group-hover:bg-gradient-to-r from-red-500 to-orange-500 cursor-pointer h-[300px]"
               sx={{
                 backgroundColor: "black",
                 "&:hover": {
-                  backgroundColor: "rgba(212, 20, 212, 0.85)",
+                  backgroundColor: "rgba(212, 20, 111, 0.85)",
                 },
               }}
             >
-              <CardContent className="relative z-10 bg-black bg-opacity-100 group-hover:bg-opacity-70">
+              <CardContent
+                className="relative z-10 bg-black bg-opacity-100 group-hover:bg-opacity-70"
+                onClick={() => setSelectedCard(item)}
+              >
                 <Typography variant="h5" className="font-bold text-gray-300">
                   {item.id}
                 </Typography>
@@ -80,10 +110,7 @@ const ServicesComponent: React.FC = () => {
                 <Typography variant="body2" className="text-gray-400 mt-2">
                   {item.description.slice(0, 30)}...
                 </Typography>
-                <div
-                  className="mt-4 text-gray-300 font-semibold flex items-center gap-2 cursor-pointer"
-                  onClick={() => setSelectedCard(item)}
-                >
+                <div className="mt-4 text-gray-300 font-semibold flex items-center gap-2 cursor-pointer">
                   Read More <span className="text-lg">→</span>
                 </div>
               </CardContent>
