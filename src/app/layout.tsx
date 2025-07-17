@@ -27,9 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth scrollbar-hide">
        <body
-      className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden overflow-y-scroll scrollbar-hidden`}
+      className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden overflow-y-scroll scrollbar-hidden mt-20`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <Navbar />
         {children}
       </div>
