@@ -44,7 +44,7 @@ const HomeComponent: React.FC = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
         >
-          I&apos;m a fullstack developer from Hyderabad, Telangana, India with 3+
+          I&apos;m a fullstack developer from Hyderabad, Telangana, India with 4+
           years of experience in Capgemini.
         </motion.span>
       </p>
