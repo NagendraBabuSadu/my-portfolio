@@ -7,7 +7,7 @@ interface MediaCardProps {
   height: string;
   borderRadiusOuter?: string;
   borderRadiusInner: string;
-
+  loading: string
 }
 
 export default function MediaCard({
@@ -33,6 +33,7 @@ export default function MediaCard({
           height: { height },
           borderRadius:  borderRadiusInner ,
         }}
+        loading="lazy"
       >
       </CardMedia>
     </Card>

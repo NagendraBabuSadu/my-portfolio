@@ -20,6 +20,8 @@ const HomeComponent: React.FC = () => {
           height="250px"
           borderRadiusInner="50%"
           borderRadiusOuter="50%"
+          loading="lazy"
+
         />
       </div>
       <motion.div 

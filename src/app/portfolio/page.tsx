@@ -62,6 +62,8 @@ const PortfolioComponent: React.FC = () => {
                 width="25rem"
                 height="16rem"
                 borderRadiusInner=""
+                loading="lazy"
+               
               ></MediaCard>
             </a>
             <Typography variant="h5" className="p-4">
