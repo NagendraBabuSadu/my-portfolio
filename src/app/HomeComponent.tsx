@@ -21,10 +21,9 @@ const HomeComponent: React.FC = () => {
           borderRadiusInner="50%"
           borderRadiusOuter="50%"
           loading="lazy"
-
         />
       </div>
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -44,22 +43,22 @@ const HomeComponent: React.FC = () => {
         <motion.span
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, delay: 0.6 }}
+          transition={{ duration: 1, delay: 0.6 }}  
         >
-          I&apos;m a fullstack developer from Hyderabad, Telangana, India with 4+
-          years of experience in Capgemini.
+          I&apos;m a fullstack developer from Hyderabad, Telangana, India with
+          4+ years of experience in Capgemini.
         </motion.span>
       </p>
-      <motion.div 
-      initial={{ opacity: 0, x: -50 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 1, delay: 0.6 }}
-        >
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, delay: 0.6 }}
+      >
         <Button
           sx={{
             background: "linear-gradient(90deg, #9333ea, #f97316)", // Purple to Orange
-        
-            color: '#000',
+
+            color: "#000",
             padding: "12px 24px",
             borderRadius: "50px",
             fontSize: "2rem",
@@ -70,7 +69,6 @@ const HomeComponent: React.FC = () => {
               opacity: 0.8,
               color: "white",
               boxShadow: "0px 0px 10px rgb(250, 229, 229)",
-
             },
           }}
           className="bg-blue-500 text-white px-4 py-2 

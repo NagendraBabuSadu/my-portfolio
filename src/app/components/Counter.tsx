@@ -10,8 +10,8 @@ const Counter: React.FC = () => {
   }
 
   const stats: statsProps[] = [
-    { id: 1, value: 3, label: "Years of Experience" },
-    { id: 2, value: 4, label: "Projects Completed" },
+    { id: 1, value: 4, label: "Years of Experience" },
+    { id: 2, value: 5, label: "Projects Completed" },
     { id: 4, value: 4, label: "Happy Clients" },
   ];
 
