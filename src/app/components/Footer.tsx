@@ -16,7 +16,7 @@ const Footer = () => {
             <p className="text-gray-400 mt-2">
               I am a .NET Fullstack developer from India with 3+ years of experience
               in company
-              <span className="text-gray-300 font-medium"> Capgemini.</span>
+              <span className="text-gray-300 font-medium"> Innominds.</span>
             </p>
           </div>
         </div>
