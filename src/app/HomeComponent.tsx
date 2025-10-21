@@ -46,7 +46,7 @@ const HomeComponent: React.FC = () => {
           transition={{ duration: 1, delay: 0.6 }}  
         >
           I&apos;m a fullstack developer from Hyderabad, Telangana, India with
-          4+ years of experience in Capgemini.
+          3.6 years of experience in Innominds.
         </motion.span>
       </p>
       <motion.div

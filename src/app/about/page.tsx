@@ -24,7 +24,7 @@ const AboutComponent: React.FC = () => {
         About Me
       </Typography>
       <MotionComponent variant="body1" fontSize="1.4rem">
-        I am an experienced Frontend Developer with over 4 years of professional
+        I am an experienced .NET Fullstack Developer with 3.6 years of professional
         expertise in the field. Throughout my career, I have had the privilege
         of collaborating with prestigious organizations, contributing to their
         success and growth.

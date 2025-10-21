@@ -27,12 +27,7 @@ const imageslist: imageslistProps[] = [
     image: "best deals interiors.png",
     projectTitle: "Best Deals Interiors",
     url: "https://bestdealsinteriors.netlify.app/",
-  },
-  {
-    image: "pumperpal.webp",
-    projectTitle: "Pumperpal",
-    url: "https://www.pumperpal.io/",
-  },
+  }
 ];
 
 const PortfolioComponent: React.FC = () => {
