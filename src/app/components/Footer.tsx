@@ -14,7 +14,7 @@ const Footer = () => {
               Nagendra <span className="text-pink-500">Babu</span>
             </h2>
             <p className="text-gray-400 mt-2">
-              I am a frontend developer from India with 4+ years of experience
+              I am a .NET Fullstack developer from India with 3+ years of experience
               in company
               <span className="text-gray-300 font-medium"> Capgemini.</span>
             </p>
