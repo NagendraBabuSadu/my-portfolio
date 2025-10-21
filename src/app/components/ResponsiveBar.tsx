@@ -6,10 +6,10 @@ interface skillItem {
 }
 
 const skills: skillItem[] = [
-  { name: "HTML & CSS", level: "w-[90%]" },
+  { name: ".NET Core", level: "w-[90%]" },
   { name: "React JS", level: "w-[85%]" },
-  { name: "JavaScript", level: "w-[80%]" },
-  { name: "Node.js", level: "w-[75%]" },
+  { name: "EF Core", level: "w-[80%]" },
+  { name: "SQL", level: "w-[80%]" }
 ];
 const SkillBar: React.FC = () => {
   return (
